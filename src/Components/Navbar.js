@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ children }) => {
   return (
@@ -18,12 +19,12 @@ const Navbar = ({ children }) => {
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal">
 
-              <li><a className="rounded-lg">Home</a></li>
-              <li><a className="rounded-lg">Packages</a></li>
-              <li><a className="rounded-lg">Designs</a></li>
-              <li><a className="rounded-lg">About</a></li>
-              <li><a className="rounded-lg">Bookings</a></li>
-              <li><a className="rounded-lg">SignIn</a></li>
+              <li><Link to='/' className="rounded-lg">Home</Link></li>
+              <li><Link to='/packages' className="rounded-lg">Packages</Link></li>
+              <li><Link to='/designs' className="rounded-lg">Designs</Link></li>
+              <li><Link to='/about' className="rounded-lg">About</Link></li>
+              <li><Link toh='/bookings' className="rounded-lg">Bookings</Link></li>
+              <li><Link to='/signin' className="rounded-lg">SignIn</Link></li>
             </ul>
           </div>
         </div>
@@ -35,12 +36,12 @@ const Navbar = ({ children }) => {
         <label for="my-drawer-3" class="drawer-overlay"></label>
         <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 rounded-box">
 
-          <li><a className="rounded-lg">Home</a></li>
-          <li><a className="rounded-lg">Packages</a></li>
-          <li><a className="rounded-lg">Designs</a></li>
-          <li><a className="rounded-lg">About</a></li>
-          <li><a className="rounded-lg">Bookings</a></li>
-          <li><a className="rounded-lg">SignIn</a></li>
+          <li><Link to='/' className="rounded-lg">Home</Link></li>
+          <li><Link to='/packages' className="rounded-lg">Packages</Link></li>
+          <li><Link to='/designs' className="rounded-lg">Designs</Link></li>
+          <li><Link to='/about' className="rounded-lg">About</Link></li>
+          <li><Link to='/bookings' className="rounded-lg">Bookings</Link></li>
+          <li><Link to='/signin' className="rounded-lg">SignIn</Link></li>
 
         </ul>
 
