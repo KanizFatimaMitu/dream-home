@@ -22,7 +22,7 @@ const Navbar = () => {
               <li><a>Packages</a></li>
               <li><a>Desings</a></li>
               <li><a>About</a></li>
-              <li><a>book now</a></li>
+              <li><a>Bookings</a></li>
               <li><a>Singin</a></li>
             </ul>
           </div>
@@ -38,7 +38,7 @@ const Navbar = () => {
           <li class="hover-bordered"><a>Packages</a></li>
           <li><a>Desings</a></li>
           <li><a>About</a></li>
-          <li><a>book now</a></li>
+          <li><a>Bookings</a></li>
           <li><a>Singin</a></li>
 
         </ul>
