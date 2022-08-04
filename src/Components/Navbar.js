@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ children }) => {
   return (
     <div class="drawer drawer-end">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -18,28 +18,29 @@ const Navbar = () => {
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal">
 
-              <li><a>Home</a></li>
-              <li><a>Packages</a></li>
-              <li><a>Desings</a></li>
-              <li><a>About</a></li>
-              <li><a>Bookings</a></li>
-              <li><a>Singin</a></li>
+              <li><a className="rounded-lg">Home</a></li>
+              <li><a className="rounded-lg">Packages</a></li>
+              <li><a className="rounded-lg">Designs</a></li>
+              <li><a className="rounded-lg">About</a></li>
+              <li><a className="rounded-lg">Bookings</a></li>
+              <li><a className="rounded-lg">SignIn</a></li>
             </ul>
           </div>
         </div>
 
-        Content
+        {children}
+
       </div>
       <div class="drawer-side">
         <label for="my-drawer-3" class="drawer-overlay"></label>
         <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 rounded-box">
 
-          <li><a>Home</a></li>
-          <li class="hover-bordered"><a>Packages</a></li>
-          <li><a>Desings</a></li>
-          <li><a>About</a></li>
-          <li><a>Bookings</a></li>
-          <li><a>Singin</a></li>
+          <li><a className="rounded-lg">Home</a></li>
+          <li><a className="rounded-lg">Packages</a></li>
+          <li><a className="rounded-lg">Designs</a></li>
+          <li><a className="rounded-lg">About</a></li>
+          <li><a className="rounded-lg">Bookings</a></li>
+          <li><a className="rounded-lg">SignIn</a></li>
 
         </ul>
 
