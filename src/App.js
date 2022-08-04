@@ -13,16 +13,16 @@ import Home from './Pages/Home';
 function App() {
   return (
     <div>
-     <Navbar>
-    <Routes>
-      <Route pathname='/' element={<Home></Home>}></Route>
-      <Route pathname='/packages' element={<Packages></Packages>}></Route>
-      <Route pathname='/designs' element={<Designs></Designs>}></Route>
-      <Route path='/about' element={<About></About>}></Route>
-      <Route path='/bookings' element={<Bookings></Bookings>}></Route>
-      <Route path='/signin' element={<SignIn></SignIn>}></Route>
-    </Routes>
-     </Navbar>
+      <Navbar>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/packages" element={<Packages></Packages>}></Route>
+          <Route path="/designs" element={<Designs></Designs>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/bookings" element={<Bookings></Bookings>}></Route>
+          <Route path="/signin" element={<SignIn></SignIn>}></Route>
+        </Routes>
+      </Navbar>
     </div>
   );
 }
