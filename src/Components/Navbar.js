@@ -24,7 +24,18 @@ const Navbar = ({ children }) => {
               <li><NavLink to="/designs" className="rounded-lg">Designs</NavLink></li>
               <li><NavLink to="/about" className="rounded-lg">About</NavLink></li>
               <li><NavLink to="/bookings" className="rounded-lg">Bookings</NavLink></li>
-              <li><NavLink to="/signin" className="rounded-lg border-2 border-primary">SignIn</NavLink></li>
+              <li><NavLink to="/signin" className="rounded-lg">SignIn</NavLink></li>
+              <li class="dropdown dropdown-hover">
+                
+                  <label tabindex="0" class="btn btn-primary btn-outline rounded-full m-1">User</label>
+                  <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Your profile</a></li>
+                    <li><a>your bookings</a></li>
+                    <li><a>Settings</a></li>
+                    <li><a>Sign out</a></li>
+                  </ul>
+                
+              </li>
             </ul>
           </div>
         </div>
