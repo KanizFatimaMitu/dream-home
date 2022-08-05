@@ -27,7 +27,7 @@ const Navbar = ({ children }) => {
               <li><button data-toggle-theme="dark,light" data-act-class="ACTIVECLASS">Theme</button></li>
               <li class="dropdown dropdown-hover dropdown-end">
 
-                <label tabindex="0" class="btn btn-primary btn-outline rounded-full m-1">User</label>
+                <NavLink to="/singin" tabindex="0" class="btn btn-primary btn-outline rounded-full m-1">User</NavLink>
                 <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><a>Your profile</a></li>
                   <li><a>your bookings</a></li>
