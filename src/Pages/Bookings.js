@@ -2,8 +2,18 @@ import React from 'react';
 
 const Bookings = () => {
     return (
-        <div>
-            <h1>"I am a MERN stack web developer. I love to use my creativity and make something new. That's why I love to play with code. Over the last year, I gather knowledge in various parts of web development by myself. My ultimate goal is to become an awesome full-stack web developer who can make beautiful UIs and also can handle the back-end smoothly."</h1>
+        <div class="card w-96 mx-auto bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+                <img src="https://placeimg.com/400/225/arch" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title text-primary">Please Confirm</h2>
+                <p>package name : {}</p>
+                <div class="card-actions">
+                    <button class="btn btn-primary">Check Out</button>
+                    <button class="btn btn-primary">cancel</button>
+                </div>
+            </div>
         </div>
     );
 };
