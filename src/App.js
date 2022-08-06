@@ -6,7 +6,7 @@ import Packages from './Pages/Packages';
 import Designs from './Pages/Designs';
 import Bookings from './Pages/Bookings';
 import SignIn from './Pages/SignIn';
-import Home from './Pages/Home';
+import Home from './Pages/Home/Home';
 
 
 
