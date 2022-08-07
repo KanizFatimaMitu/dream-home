@@ -7,6 +7,9 @@ import Designs from './Pages/Designs';
 import Bookings from './Pages/Bookings';
 import SignIn from './Pages/SignIn';
 import Home from './Pages/Home/Home';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 // const publicRoute =[
 //   {path:"/", name:"Home", Components: Home}
@@ -18,6 +21,10 @@ import Home from './Pages/Home/Home';
 
 
 function App() {
+  useEffect(()=>{
+    AOS.init();
+  },[])
+
   return (
     <div>
       <Navbar>

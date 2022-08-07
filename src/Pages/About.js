@@ -4,7 +4,7 @@ import React from 'react';
 const About = () => {
     return (
         <div>
-            <div class="hero min-h-0 h-96 bg-base">
+            <div class="hero min-h-0 h-96">
                 <div class="hero-content flex-col lg:flex-row">
                     <img src="https://i.ibb.co/KVRbKLT/52164970-2228488447418201-942979208211070976-n.jpg" class="max-w-sm rounded-lg shadow-2xl" alt='' />
                     <div>

@@ -12,7 +12,7 @@ module.exports = {
 
           "secondary": "#FFC000",
 
-          "accent": "#FFEDD5",
+          "accent": "#6D4C41",
 
           "neutral": "#F3F4F6",
 
@@ -30,11 +30,11 @@ module.exports = {
       {
         dark: {
 
-          "primary": "#D9F99D",
+          "primary": "#EF6C00",
 
           "secondary": "#FDE68A",
 
-          "accent": "#4B5563",
+          "accent": "#3E2723",
 
           "neutral": "#F3F4F6",
 
@@ -44,7 +44,7 @@ module.exports = {
 
           "success": "#1BBB70",
 
-          "warning": "#F59E0B",
+          "warning": "#FFC000",
 
           "error": "#FB7185",
         },
