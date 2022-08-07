@@ -12,16 +12,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import PrivateRoute from './Authentications/PrivateRoute';
 
-
-// const publicRoute =[
-//   {path:"/", name:"Home", Components: Home}
-//   {path:"/packages", name:"Packages", Components: Packages}
-//   {path:"/designs", name:"Designs", Components: Designs}
-//   {path:"/about", name:"About", Components: About}
-//   {path:"/bookings", name:"Home", Components: Home}
-// ]
-
-
+// For Animation 
 function App() {
   useEffect(()=>{
     AOS.init();

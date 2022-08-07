@@ -4,10 +4,10 @@ import './SignIn.css'
 const SignIn = () => {
     return (
 
-        <div className='sign-image h-[90vh] pt-4 '>
-            <div class="card flex-shrink-0 w-full max-w-sm ml-60 shadow-2xl bg-base-100 ">
+        <div className='sign-image h-[90vh] pt-4'>
+            <div class="card flex-shrink-0 w-full max-w-sm justify-items-start ml-48 shadow-2xl bg-base-100 ">
                 <div class="card-body">
-                    <h3 className='text-center font-bold text-primary'>SignIn</h3>
+                <h3 className='text-center font-bold text-primary'>SignIn</h3>
                     <div class="form-control">
                         <label class="label">
                             <span class="label-text text-primary">Email</span>
