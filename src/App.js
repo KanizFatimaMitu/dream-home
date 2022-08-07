@@ -10,6 +10,8 @@ import Home from './Pages/Home/Home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import PrivateRoute from './Authentications/PrivateRoute';
+
 
 // const publicRoute =[
 //   {path:"/", name:"Home", Components: Home}
@@ -27,16 +29,21 @@ function App() {
 
   return (
     <div>
-      <Navbar>
+       <Navbar>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/packages" element={<Packages></Packages>}></Route>
-          <Route path="/designs" element={<Designs></Designs>}></Route>
+          <Route path="/designs" element={
+            <PrivateRoute>
+              <Designs></Designs>
+            </PrivateRoute>
+          }></Route>
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/bookings" element={<Bookings></Bookings>}></Route>
           <Route path="/signin" element={<SignIn></SignIn>}></Route>
         </Routes>
-      </Navbar>
+      </Navbar> 
+      
     </div>
   );
 }
