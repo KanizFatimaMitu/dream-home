@@ -5,7 +5,7 @@ import About from './Pages/About';
 import Packages from './Pages/Packages';
 import Designs from './Pages/Designs';
 import Bookings from './Pages/Bookings';
-import SignIn from './Pages/SignIn';
+import SignIn from './Pages/SignIn/SignIn';
 import Home from './Pages/Home/Home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

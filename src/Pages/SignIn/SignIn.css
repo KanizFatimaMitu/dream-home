@@ -1,0 +1,6 @@
+.sign-image{
+    background-image: url(https://i.ibb.co/bJ9jNyB/decor1.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}

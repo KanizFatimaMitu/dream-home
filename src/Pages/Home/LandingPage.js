@@ -43,9 +43,9 @@ const LandingPage = () => {
             "You can choose however you want.We'll provide you that at best budget in town."
           </p>
           <button
-            class="btn btn-primary text-bold"
+            class="btn btn-primary text-bold text-neutral"
             data-aos="zoom-in"
-            data-aos-delay="1300"
+            data-aos-delay="1100"
           >
             Please signin
           </button>
