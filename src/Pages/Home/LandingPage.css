@@ -1,0 +1,6 @@
+.image{
+    background-image: url(https://i.ibb.co/sWJhn4t/cover.jpg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
