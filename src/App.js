@@ -11,6 +11,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import PrivateRoute from './Authentications/PrivateRoute';
+import AdminRoute from './Authentications/AdminRoute';
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 // For Animation 
 function App() {
@@ -32,6 +34,11 @@ function App() {
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/bookings" element={<Bookings></Bookings>}></Route>
           <Route path="/signin" element={<SignIn></SignIn>}></Route>
+          <Route path="/dashboard" element={
+            <AdminRoute>
+              <Dashboard></Dashboard>
+            </AdminRoute>
+          }></Route>
         </Routes>
       </Navbar> 
       
