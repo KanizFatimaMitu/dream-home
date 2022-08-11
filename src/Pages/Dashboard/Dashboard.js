@@ -1,14 +1,15 @@
 import React from 'react';
+import Dashboardsidebar from '../../Components/Dashboardsidebar';
 
 const Dashboard = () => {
     return (
         <div>
-            <h1>this is dashboard</h1>
-            <h1>this is dashboard</h1>
-            <h1>this is dashboard</h1>
-            <h1>this is dashboard</h1>
-            <h1>this is dashboard</h1>
+            
+            <Dashboardsidebar>
+            <h1 className='text-neutral font-bold text-2xl'>welcome to dashboard</h1>
+            </Dashboardsidebar>
         </div>
+
     );
 };
 
