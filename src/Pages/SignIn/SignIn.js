@@ -1,7 +1,20 @@
 import React from 'react';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 import './SignIn.css'
 
 const SignIn = () => {
+    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    if (error) {
+        return (
+          <div>
+            <p>Error: {error.message}</p>
+          </div>
+        );
+      }
+      if (loading) {
+        return <p>Loading...</p>;
+      }
     return (
 
         <div className='sign-image h-[90vh] pt-4'>
@@ -27,7 +40,7 @@ const SignIn = () => {
                         <button class="btn btn-primary">signin</button>
                     </div>
                     <div class="divider">OR</div>
-                    <button className='btn btn-glass hover:btn-primary'>continue with google</button>
+                    <button onClick={() => signInWithGoogle()} className='btn btn-glass hover:btn-primary'>continue with google</button>
                 </div>
             </div>
         </div>
