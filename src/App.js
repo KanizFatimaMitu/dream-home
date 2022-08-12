@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 import PrivateRoute from './Authentications/PrivateRoute';
 import AdminRoute from './Authentications/AdminRoute';
 import Dashboard from './Pages/Dashboard/Dashboard';
+import SignUp from './Pages/SignIn/SignUp';
 
 // For Animation 
 function App() {
@@ -33,12 +34,14 @@ function App() {
           }></Route>
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/bookings" element={<Bookings></Bookings>}></Route>
-          <Route path="/signin" element={<SignIn></SignIn>}></Route>
           <Route path="/dashboard" element={
             <AdminRoute>
               <Dashboard></Dashboard>
             </AdminRoute>
           }></Route>
+          <Route path="/signin" element={<SignIn></SignIn>}></Route>
+          <Route path="/signup" element={<SignUp></SignUp>}></Route>
+         
         </Routes>
       </Navbar> 
       
