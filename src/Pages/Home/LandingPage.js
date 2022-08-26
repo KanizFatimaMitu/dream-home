@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './LandingPage.css'
 
 const LandingPage = () => {
+  
+  
   return (
     //   <div class="hero h-[90vh] image">
     //   <div class="hero-overlay bg-opacity-30"></div>
@@ -47,7 +50,7 @@ const LandingPage = () => {
             data-aos="zoom-in"
             data-aos-delay="1100"
           >
-            Please signin
+            <Link to="/packages">check out our packages</Link>
           </button>
         </div>
       </div>

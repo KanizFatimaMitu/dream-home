@@ -4,6 +4,7 @@ import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Landing from '../../Components/Landing';
+import './SignIn.css'
 
 const SignIn = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -39,7 +40,7 @@ const SignIn = () => {
     }
 
     return (
-        <div className='flex h-screen justify-center items-center'>
+        <div className='flex sign-image h-screen justify-center items-center'>
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="text-center text-2xl text-primary font-bold">SignIn</h2>
@@ -95,7 +96,7 @@ const SignIn = () => {
                         </div>
 
                         {signInError}
-                        <input className='btn w-full max-w-xs text-white bg-primary' type="submit" value="Login" />
+                        <input className='btn w-full max-w-xs text-white bg-primary' type="submit" value="Signin" />
                     </form>
                     <p><small>New here ? <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
                     <div className="divider">OR</div>

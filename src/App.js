@@ -17,23 +17,23 @@ import SignUp from './Pages/SignIn/SignUp';
 
 // For Animation 
 function App() {
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init();
-  },[])
+  }, [])
 
   return (
     <div>
-       <Navbar>
+      <Navbar>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/packages" element={<Packages></Packages>}></Route>
-          <Route path="/designs" element={
+          <Route path="/designs" element={<Designs></Designs>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/bookings" element={
             <PrivateRoute>
-              <Designs></Designs>
+              <Bookings></Bookings>
             </PrivateRoute>
           }></Route>
-          <Route path="/about" element={<About></About>}></Route>
-          <Route path="/bookings" element={<Bookings></Bookings>}></Route>
           <Route path="/dashboard" element={
             <AdminRoute>
               <Dashboard></Dashboard>
@@ -41,10 +41,10 @@ function App() {
           }></Route>
           <Route path="/signin" element={<SignIn></SignIn>}></Route>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
-         
+
         </Routes>
-      </Navbar> 
-      
+      </Navbar>
+
     </div>
   );
 }
