@@ -29,11 +29,7 @@ function App() {
           <Route path="/packages" element={<Packages></Packages>}></Route>
           <Route path="/designs" element={<Designs></Designs>}></Route>
           <Route path="/about" element={<About></About>}></Route>
-          <Route path="/bookings" element={
-            <PrivateRoute>
-              <Bookings></Bookings>
-            </PrivateRoute>
-          }></Route>
+          <Route path="/bookings" element={<Bookings></Bookings>}></Route>
           <Route path="/dashboard" element={
             <AdminRoute>
               <Dashboard></Dashboard>
