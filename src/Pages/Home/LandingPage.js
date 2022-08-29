@@ -51,7 +51,7 @@ const LandingPage = () => {
       <FontAwesomeIcon 
       data-aos="fade-down" 
       data-aos-delay="1100"
-      className='mt-[72vh] text-primary text-2xl font-bold invisible lg:visible' 
+      className='mt-[80vh] text-primary text-2xl font-bold invisible lg:visible' 
       icon={ faArrowCircleDown } />
     </div>
 

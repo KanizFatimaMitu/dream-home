@@ -66,9 +66,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div
-                
-                className='text-center mt-8'>
+                <div className='text-center mt-8'>
                     <button
                        class="btn btn-xs btn-primary sm:btn-sm md:btn-md lg:btn-lg">
                         <Link to='/packages'>see all</Link>
