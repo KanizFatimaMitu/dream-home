@@ -6,20 +6,10 @@ const LandingPage = () => {
   
   
   return (
-    //   <div class="hero h-[90vh] image">
-    //   <div class="hero-overlay bg-opacity-30"></div>
-    //   <div class="hero-content  text-neutral-content">
-    //     <div>
-    //       <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-    //       <p class="mb-5 text-left">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-    //       <button class="btn btn-primary">Get Started</button>
-    //     </div>
-    //   </div>
-    // </div>
-
+    
     <div class="hero h-[90vh] bg-base-200 image">
 
-      <div className='mb-20 mr-24 lg:mr-72 text-center'>
+      <div className='flex justify-center mt-4 mb-72 lg:mb-20 mr-0 lg:ml-[-72vh] text-center'>
         <div className='w-3/5' >
           <h1
             class="text-5xl text-primary font-bold"
