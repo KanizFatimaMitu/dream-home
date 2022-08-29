@@ -22,9 +22,9 @@ const Packages = () => {
   }, [])
 
   return (
-    <div className='text-2xl font-bold text-primary text-center m-8 p-8'>
-      <h1>our packages</h1>
-      <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 mx-12'>
+    <div >
+      <h1 className='text-2xl font-bold text-primary text-center m-8 p-8'>our packages</h1>
+      <div className='grid grid-cols-1 lg:grid-cols-3 text-center gap-y-4 ml-0 lg:ml-20'>
         {
           packages.map(perPackage => <Package
             key={perPackage._id}
