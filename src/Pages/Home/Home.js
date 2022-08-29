@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import LandingPage from './LandingPage';
-import Packages from '../Packages';
 import Package from '../SignIn/Package';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
     const [packages, setPackages] = useState([])
@@ -26,7 +27,12 @@ const Home = () => {
                     }
                 </div>
                 <div className='text-center mt-8'>
-                    <button class="btn btn-xs btn-primary sm:btn-sm md:btn-md lg:btn-lg">see all</button>
+                    <button class="btn btn-xs btn-primary sm:btn-sm md:btn-md lg:btn-lg">
+                        see all
+                    <div className='ml-4' >
+                    <FontAwesomeIcon icon={faArrowAltCircleRight} />
+                    </div>
+                    </button>
                 </div>
             </div>
         </div>

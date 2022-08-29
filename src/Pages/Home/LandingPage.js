@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons'
 
 const LandingPage = () => {
-  
-  
+
+
   return (
-    
-    <div class="hero h-[90vh] bg-base-200 image">
+
+    <div class="hero h-[100vh] lg:h-[70vh] bg-base-200 image">
 
       <div className='flex justify-center mt-4 mb-72 lg:mb-20 mr-0 lg:ml-[-72vh] text-center'>
         <div className='w-3/5' >
@@ -42,8 +44,15 @@ const LandingPage = () => {
           >
             <Link to="/packages">check out our packages</Link>
           </button>
+
         </div>
+
       </div>
+      <FontAwesomeIcon 
+      data-aos="fade-down" 
+      data-aos-delay="1100"
+      className='mt-[72vh] text-primary text-2xl font-bold invisible lg:visible' 
+      icon={ faArrowCircleDown } />
     </div>
 
 
