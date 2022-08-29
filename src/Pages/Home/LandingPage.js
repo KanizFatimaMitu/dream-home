@@ -19,7 +19,7 @@ const LandingPage = () => {
 
     <div class="hero h-[90vh] bg-base-200 image">
 
-      <div className='mr-72'>
+      <div className='mb-20 mr-24 lg:mr-72 text-center'>
         <div className='w-3/5' >
           <h1
             class="text-5xl text-primary font-bold"
