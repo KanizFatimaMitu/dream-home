@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Package from './SignIn/Package';
+import Package from './Package';
 
 const Packages = () => {
 

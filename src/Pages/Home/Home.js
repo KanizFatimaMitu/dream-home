@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import LandingPage from './LandingPage';
-import Package from '../SignIn/Package';
+import Package from '../../Pages/Packages/Package';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
