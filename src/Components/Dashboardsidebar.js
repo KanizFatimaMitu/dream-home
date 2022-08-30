@@ -16,8 +16,8 @@ const Dashboardsidebar = ({children}) => {
                     <label for="my-drawer-2" class="drawer-overlay"></label>
                     <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 font-bold text-primary ">
                         {/* <!-- Sidebar content here --> */}
-                        <li><a>Add Bookings</a></li>
-                        <li><a>Add admin</a></li>
+                        <li><a>Bookings detail</a></li>
+                        <li><a>Consultation Detail</a></li>
                     </ul>
 
                 </div>

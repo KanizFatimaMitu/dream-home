@@ -42,7 +42,6 @@ const Navbar = ({ children }) => {
               <li><NavLink to="/packages" className="rounded-lg">Packages</NavLink></li>
               <li><NavLink to="/designs" className="rounded-lg">Designs</NavLink></li>
               <li><NavLink to="/about" className="rounded-lg">About</NavLink></li>
-              <li><NavLink to="/bookings" className="rounded-lg">Bookings</NavLink></li>
               {/* Only For Admin  */}
               {admin &&
                 (<li><NavLink to="/dashboard" className="rounded-lg">Dashboard</NavLink></li>)
@@ -63,9 +62,7 @@ const Navbar = ({ children }) => {
                   <img class="w-10 h-10 rounded-full" src="https://placeimg.com/192/192/people" alt='' />
                 </NavLink>
                 <ul tabindex="0" class="dropdown-content menu p-2 gap-y-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Your profile</a></li>
-                  <li><a>your bookings</a></li>
-                  <li><a>Settings</a></li>
+                  <li> <a target="_blank" href="https://www.linkedin.com/in/kaniz-fatima-mitu-212432233/" >Your profile</a></li>
                   <li className='bg-primary rounded-lg text-neutral'><a>Sign out</a></li>
                 </ul>
               </li>
@@ -91,7 +88,6 @@ const Navbar = ({ children }) => {
           <li><NavLink to="/packages" className="rounded-lg">Packages</NavLink></li>
           <li><NavLink to="/designs" className="rounded-lg">Designs</NavLink></li>
           <li><NavLink to="/about" className="rounded-lg">About</NavLink></li>
-          <li><NavLink to="/bookings" className="rounded-lg">Bookings</NavLink></li>
           <li><NavLink to="/dashboard" className="rounded-lg">Dashboard</NavLink></li>
           <li><NavLink to="/signin" className="rounded-lg text-neutral">SignIn</NavLink></li>
         </ul>
