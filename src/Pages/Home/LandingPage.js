@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './LandingPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons'
@@ -42,17 +41,17 @@ const LandingPage = () => {
             data-aos="zoom-in"
             data-aos-delay="1100"
           >
-            <Link to="/packages">check out our packages</Link>
+            <a target="_blank" href="https://www.linkedin.com/in/kaniz-fatima-mitu-212432233/" >check out more about us</a>
           </button>
 
         </div>
 
       </div>
-      <FontAwesomeIcon 
-      data-aos="fade-down" 
-      data-aos-delay="1100"
-      className='mt-[80vh] text-primary text-2xl font-bold invisible lg:visible' 
-      icon={ faArrowCircleDown } />
+      <FontAwesomeIcon
+        data-aos="fade-down"
+        data-aos-delay="1100"
+        className='mt-[80vh] text-primary text-2xl font-bold invisible lg:visible'
+        icon={faArrowCircleDown} />
     </div>
 
 

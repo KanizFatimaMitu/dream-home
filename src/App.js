@@ -13,6 +13,7 @@ import { useEffect } from 'react';
 import AdminRoute from './Authentications/AdminRoute';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import SignUp from './Pages/SignIn/SignUp';
+import ConfirmationModal from './Components/ConfirmationModal';
 
 // For Animation 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   }, [])
 
   return (
+
     <div>
       <Navbar>
         <Routes>
@@ -36,9 +38,10 @@ function App() {
           }></Route>
           <Route path="/signin" element={<SignIn></SignIn>}></Route>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
-
+          <Route path="/confirm" element={<ConfirmationModal></ConfirmationModal>}></Route>
         </Routes>
       </Navbar>
+
 
     </div>
   );
