@@ -1,5 +1,5 @@
 import React from 'react';
-import BookingModal from '../../Components/BookingModal';
+import PackageBookingModal from './PackageBookingModal';
 
 const Package = ({ perPackage }) => {
     const { name, price } = perPackage;
@@ -28,15 +28,15 @@ const Package = ({ perPackage }) => {
                         </div>
                        
                         {/* <!-- The button to open Book Now modal --> */}
-                        <label for="booking" class="btn btn-primary modal-button">Book Now</label>
+                        <label for="booking-modal" class="btn btn-primary modal-button">Book Now</label>
 
                         {/* <!-- Put this part before </body> tag --> */}
-                        <input type="checkbox" id="booking" class="modal-toggle" />
+                        <input type="checkbox" id="booking-modal" class="modal-toggle" />
                         <div class="modal modal-bottom sm:modal-middle">
                             <div class="modal-box">
-                                <BookingModal></BookingModal>
+                                <PackageBookingModal></PackageBookingModal>
                                 <div class="modal-action">
-                                    <label for="booking" class="btn">Close</label>
+                                    <label for="booking-modal" class="btn">Close</label>
                                 </div>
                             </div>
                         </div>

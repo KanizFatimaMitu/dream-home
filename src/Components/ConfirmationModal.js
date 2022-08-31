@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ConfirmationModal = () => {
+
     return (
         <div className='flex justify-center items-center mt-12 '>
             <div class=" card w-96 bg-base-100 shadow-xl">

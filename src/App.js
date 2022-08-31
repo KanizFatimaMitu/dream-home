@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import About from './Pages/About';
 import Packages from './Pages/Packages/Packages';
-import Designs from './Pages/Designs';
+import Designs from './Pages/Designs/Designs';
 import Bookings from './Pages/Bookings';
 import SignIn from './Pages/SignIn/SignIn';
 import Home from './Pages/Home/Home';

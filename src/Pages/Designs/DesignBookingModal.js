@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BookingModal = () => {
+const DesignBookingModal = () => {
+   
     return (
         <div>
             <div class="hero">
@@ -9,7 +10,7 @@ const BookingModal = () => {
 
                 <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl ">
                     <div class="card-body">
-                        <div class="form-control">
+                        <div  class="form-control">
                             <label class="label">
                                 <span class="label-text">Email</span>
                             </label>
@@ -30,8 +31,8 @@ const BookingModal = () => {
                         <div class="form-control mt-6">
                             <button class="btn btn-primary">
                                 <Link to='/confirm'> confirm</Link>
-                              
-                                 </button>
+
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -41,4 +42,4 @@ const BookingModal = () => {
     );
 };
 
-export default BookingModal;
+export default DesignBookingModal;
