@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 import AdminRoute from './Authentications/AdminRoute';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import SignUp from './Pages/SignIn/SignUp';
-import ConfirmationModal from './Components/ConfirmationModal';
+import ConfirmationModal from './Pages/Packages/ConfirmationModal';
 import Consult from './Consult/Consult';
 
 // For Animation 

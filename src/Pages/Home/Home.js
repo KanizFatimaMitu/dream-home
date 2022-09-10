@@ -4,6 +4,7 @@ import Package from '../../Pages/Packages/Package';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import Footer from '../../Components/Footer';
 
 const Home = () => {
     const [packages, setPackages] = useState([])
@@ -79,6 +80,7 @@ const Home = () => {
                     </button>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
