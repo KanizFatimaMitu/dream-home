@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import About from './Pages/About';
 import Packages from './Pages/Packages/Packages';
-import Designs from './Pages/Designs/Designs';
 import Bookings from './Pages/Bookings';
 import SignIn from './Pages/SignIn/SignIn';
 import Home from './Pages/Home/Home';
@@ -14,6 +13,7 @@ import AdminRoute from './Authentications/AdminRoute';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import SignUp from './Pages/SignIn/SignUp';
 import ConfirmationModal from './Components/ConfirmationModal';
+import Consult from './Consult/Consult';
 
 // For Animation 
 function App() {
@@ -28,7 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/packages" element={<Packages></Packages>}></Route>
-          <Route path="/designs" element={<Designs></Designs>}></Route>
+          <Route path="/consult" element={<Consult></Consult>}></Route>
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/bookings" element={<Bookings></Bookings>}></Route>
           <Route path="/dashboard" element={

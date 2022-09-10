@@ -1,4 +1,5 @@
 import React from 'react';
+import Rating from '../../Components/Rating';
 import PackageBookingModal from './PackageBookingModal';
 
 const Package = ({ perPackage }) => {
@@ -41,8 +42,11 @@ const Package = ({ perPackage }) => {
                             </div>
                         </div>
                     </div>
+                    <Rating></Rating>
                 </div>
+               
             </div>
+            
         </div >
     );
 };
