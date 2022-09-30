@@ -25,16 +25,16 @@ const Consult = () => {
 
             <div
                 data-aos="flip-up"
-                class="hero min-h-screen bg-base-200"
+                class="hero min-h-[60vh] bg-base-200"
             >
 
-                <div class="hero-content flex-col  lg:flex-row m-8"
+                <div class="hero-content flex-col lg:flex-row m-8"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="400"
                 >
                     <div>
-                        <h1 className='mb-4 text-center text-primary font-bold text-2xl'>Get your Appointment </h1>
+                        <h1 className='mb-4 text-center text-primary font-bold text-2xl'>" Get your Appointment "</h1>
                         <img src={consultation} class="max-w-sm rounded-lg shadow-2xl" alt='' />
                     </div>
                     <div
@@ -50,9 +50,13 @@ const Consult = () => {
                         />
                     </div>
                 </div>
+                {/* for confirmation */}
+    
             </div>
+
+
             <Footer></Footer>
-        </div>
+        </div >
     );
 };
 
