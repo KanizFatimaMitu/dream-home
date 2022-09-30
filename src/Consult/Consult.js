@@ -3,6 +3,7 @@ import { format } from 'date-fns';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 import Footer from '../Components/Footer';
+import consultation from '../Assets/consultation.jpg'
 
 
 const Consult = () => {
@@ -20,19 +21,28 @@ const Consult = () => {
     }
 
     return (
-        <div >
+        <div>
 
             <div
                 data-aos="flip-up"
-                class="hero min-h-screen bg-base-200">
-                <div class="hero-content flex-col lg:flex-row m-8">
-                    <img src="https://placeimg.com/260/400/arch" class="max-w-sm rounded-lg shadow-2xl" />
+                class="hero min-h-screen bg-base-200"
+            >
+
+                <div class="hero-content flex-col  lg:flex-row m-8"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                >
+                    <div>
+                        <h1 className='mb-4 text-center text-primary font-bold text-2xl'>Get your Appointment </h1>
+                        <img src={consultation} class="max-w-sm rounded-lg shadow-2xl" alt='' />
+                    </div>
                     <div
                         data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-delay="400">
                         <DayPicker
-                        
+
                             mode="single"
                             selected={date}
                             onSelect={setDate}
@@ -41,9 +51,6 @@ const Consult = () => {
                     </div>
                 </div>
             </div>
-
-
-
             <Footer></Footer>
         </div>
     );
