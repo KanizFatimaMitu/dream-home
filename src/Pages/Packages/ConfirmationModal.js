@@ -19,7 +19,7 @@ const ConfirmationModal = () => {
                     </div>
                     <div class="card-actions">
                         <button class="btn btn-primary">
-                            <Link to='/'>Okay</Link>
+                            <Link to='/dashboard/booking'>Okay</Link>
                         </button>
                     </div>
                 </div>

@@ -14,6 +14,8 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import SignUp from './Pages/SignIn/SignUp';
 import ConfirmationModal from './Pages/Packages/ConfirmationModal';
 import Consult from './Consult/Consult';
+import BookingDetail from './Pages/Dashboard/BookingDetail';
+import ConsultationDetail from './Pages/Dashboard/ConsultationDetail';
 
 // For Animation 
 function App() {
@@ -35,7 +37,10 @@ function App() {
             <AdminRoute>
               <Dashboard></Dashboard>
             </AdminRoute>
-          }></Route>
+          }>
+            <Route path='/dashboard/booking' element={<BookingDetail></BookingDetail>}></Route>
+            <Route path='/dashboard/consultation' element={<ConsultationDetail></ConsultationDetail>}></Route>
+          </Route>
           <Route path="/signin" element={<SignIn></SignIn>}></Route>
           <Route path="/signup" element={<SignUp></SignUp>}></Route>
           <Route path="/confirm" element={<ConfirmationModal></ConfirmationModal>}></Route>
