@@ -4,6 +4,7 @@ import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 import Footer from '../Components/Footer';
 import consultation from '../Assets/consultation.jpg'
+import ConsultModal from './ConsultModal';
 
 
 const Consult = () => {
@@ -50,10 +51,11 @@ const Consult = () => {
                         />
                     </div>
                 </div>
-                {/* for confirmation */}
-    
+                <button>
+                    <ConsultModal></ConsultModal>
+                </button>
             </div>
-
+            
 
             <Footer></Footer>
         </div >

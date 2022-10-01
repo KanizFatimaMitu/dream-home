@@ -6,8 +6,6 @@ const PackageBookingModal = () => {
         <div>
             <div>
                 <div class="hero">
-
-
                     <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl ">
                         <div class="card-body">
                             <div class="form-control">
