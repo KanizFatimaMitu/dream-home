@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PackageBookingModal = () => {
+const PackageBookingModal = ({perPackage}) => {
+    const { name } = perPackage;
     return (
         <div>
             <div>
                 <div class="hero">
                     <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl ">
                         <div class="card-body">
+                            booking for : {name}
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Email</span>
@@ -28,7 +30,7 @@ const PackageBookingModal = () => {
                             </div>
                             <div class="form-control mt-6">
                                 <button class="btn btn-primary">
-                                    <Link to='/confirm'> confirm</Link>
+                                    <Link to='/dashboard/booking'> confirm</Link>
 
                                 </button>
                             </div>

@@ -6,7 +6,7 @@ const Dashboard = () => {
         <div>
             
             <Dashboardsidebar>
-            <h1 className='text-neutral font-bold text-2xl'>welcome to dashboard</h1>
+            <h1 className='text-neutral text-2xl font-bold'> welcome to your Dashboard</h1>
             </Dashboardsidebar>
         </div>
 

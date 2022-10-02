@@ -1,9 +1,10 @@
 import React from 'react';
+import ConfirmationModal from '../Packages/ConfirmationModal';
 
 const BookingDetail = () => {
     return (
-        <div>
-            <h1>we will show all bookings here</h1>
+        <div className='h-[80vh]'>
+            <ConfirmationModal></ConfirmationModal>
         </div>
     );
 };

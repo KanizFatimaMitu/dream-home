@@ -14,8 +14,7 @@ const Consult = () => {
     if (date) {
         footer = <p
             class="btn btn-primary text-bold text-neutral m-4"
-            data-aos="zoom-in"
-            data-aos-delay="1300">
+           >
             You picked {format(date, 'PP')}.
         </p>;
 
@@ -26,10 +25,10 @@ const Consult = () => {
 
             <div
                 data-aos="flip-up"
-                class="hero min-h-[60vh] bg-base-200"
+                class="hero min-h-screen lg:min-h-[80vh] bg-base-200"
             >
 
-                <div class="hero-content flex-col lg:flex-row m-8"
+                <div class="hero-content flex-col lg:flex-row "
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="400"
@@ -55,9 +54,9 @@ const Consult = () => {
                     <ConsultModal></ConsultModal>
                 </button>
             </div>
-            
 
             <Footer></Footer>
+
         </div >
     );
 };

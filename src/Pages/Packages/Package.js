@@ -35,7 +35,7 @@ const Package = ({ perPackage }) => {
                         <input type="checkbox" id="booking-modal" class="modal-toggle" />
                         <div class="modal modal-bottom sm:modal-middle">
                             <div class="modal-box">
-                                <PackageBookingModal></PackageBookingModal>
+                                <PackageBookingModal perPackage={perPackage}></PackageBookingModal>
                                 <div class="modal-action">
                                     <label for="booking-modal" class="btn">Close</label>
                                 </div>
