@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Rating from '../../Components/Rating';
 import PackageBookingModal from './PackageBookingModal';
 
 const Package = ({ perPackage }) => {
+    const [booking, setBooking] = useState({})
     const { name, price } = perPackage;
+
+
+
+
     return (
         <div >
             <div class="card w-96 bg-base-100 shadow-xl">
@@ -13,9 +18,16 @@ const Package = ({ perPackage }) => {
                 <div class="card-body items-center text-center">
                     <h2 class="card-title">{name}</h2>
                     <p>{price}</p>
+
+                    {/* for see detail button */}
                     <div class="card-actions">
                         {/* <!-- The button to open modal --> */}
-                        <label for="my-modal-6" class="btn modal-button btn-primary">See Details</label>
+                        <label
+                            for="my-modal-6"
+                            class="btn modal-button btn-primary"
+                        >
+                            See Details
+                        </label>
 
                         {/* <!-- Put this part before </body> tag --> */}
                         <input type="checkbox" id="my-modal-6" class="modal-toggle" />
@@ -27,15 +39,26 @@ const Package = ({ perPackage }) => {
                                 </div>
                             </div>
                         </div>
-                       
+
+                        {/* for book now button */}
                         {/* <!-- The button to open Book Now modal --> */}
-                        <label for="booking-modal" class="btn btn-primary modal-button">Book Now</label>
+                        <label
+                            for="booking-modal"
+                            class="btn btn-primary modal-button"
+                            onClick={() => setBooking(perPackage)}
+                        >
+                            Book Now
+                        </label>
+
 
                         {/* <!-- Put this part before </body> tag --> */}
                         <input type="checkbox" id="booking-modal" class="modal-toggle" />
                         <div class="modal modal-bottom sm:modal-middle">
                             <div class="modal-box">
-                                <PackageBookingModal perPackage={perPackage}></PackageBookingModal>
+                               
+                                <PackageBookingModal
+                                    booking={booking}
+                                ></PackageBookingModal>
                                 <div class="modal-action">
                                     <label for="booking-modal" class="btn">Close</label>
                                 </div>
@@ -44,9 +67,9 @@ const Package = ({ perPackage }) => {
                     </div>
                     <Rating></Rating>
                 </div>
-               
+
             </div>
-            
+
         </div >
     );
 };

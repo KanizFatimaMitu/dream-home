@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Package from './Package';
 
+
 const Packages = () => {
 
   const [packages, setPackages] = useState([])
-
-  // useEffect(() => {
-  //     // axios.get("http://localhost:5000/package").then((res) => setPackages(res));
-
-  //     (async () => {
-  //       const res = await Api.get("/package");
-  //       setPackages(res.data);
-  //     })();
-  //   }, []);
-
+ 
+ 
+  
 
   useEffect(() => {
     fetch('http://localhost:5000/packages')
@@ -29,9 +23,10 @@ const Packages = () => {
           packages.map(perPackage => <Package
             key={perPackage._id}
             perPackage={perPackage}
-          ></Package>)
+            ></Package>)
         }
       </div>
+      
     </div>
   );
 };
