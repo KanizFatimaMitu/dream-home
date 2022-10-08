@@ -2,6 +2,7 @@ import React from 'react';
 import './LandingPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
 
@@ -41,7 +42,7 @@ const LandingPage = () => {
             data-aos="zoom-in"
             data-aos-delay="1100"
           >
-            <a target="_blank" href="https://www.linkedin.com/in/kaniz-fatima-mitu-212432233/" >check out more about us</a>
+            <Link to='/signup' >Contact with us</Link>
           </button>
 
         </div>
