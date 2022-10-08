@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PackageBookingModal = ({ setBooking , booking}) => {
-    const { name, price } = booking;
+const PackageBookingModal = () => {
+
+   
     
+     
    
     return (
         <div>
@@ -11,7 +13,7 @@ const PackageBookingModal = ({ setBooking , booking}) => {
                 <div class="hero">
                     <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl ">
                         <div class="card-body">
-                        <h1>booking for : {name}</h1>
+                       
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Email</span>

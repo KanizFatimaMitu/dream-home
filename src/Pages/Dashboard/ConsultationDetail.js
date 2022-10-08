@@ -1,9 +1,10 @@
 import React from 'react';
+import ConfirmConsultModal from '../../Consult/ConfirmConsultModal';
 
 const ConsultationDetail = () => {
     return (
         <div>
-            <h1>you can see all consultation detail herre</h1>
+            <ConfirmConsultModal></ConfirmConsultModal>
         </div>
     );
 };

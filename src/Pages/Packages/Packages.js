@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react';
 import Package from './Package';
 
 
+
+
 const Packages = () => {
 
-  const [packages, setPackages] = useState([])
+  const [packages, setPackages] = useState([]);
  
- 
-  
+
+
+
 
   useEffect(() => {
     fetch('http://localhost:5000/packages')
@@ -22,8 +25,9 @@ const Packages = () => {
         {
           packages.map(perPackage => <Package
             key={perPackage._id}
+           
             perPackage={perPackage}
-            ></Package>)
+          ></Package>)
         }
       </div>
       

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Rating from '../../Components/Rating';
 import PackageBookingModal from './PackageBookingModal';
 
-const Package = ({ perPackage }) => {
-    const [booking, setBooking] = useState({})
+const Package = ({ perPackage}) => {
+
     const { name, price } = perPackage;
 
 
@@ -23,19 +23,19 @@ const Package = ({ perPackage }) => {
                     <div class="card-actions">
                         {/* <!-- The button to open modal --> */}
                         <label
-                            for="my-modal-6"
+                            for="seeDetail-modal"
                             class="btn modal-button btn-primary"
                         >
                             See Details
                         </label>
 
                         {/* <!-- Put this part before </body> tag --> */}
-                        <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+                        <input type="checkbox" id="seeDetail-modal" class="modal-toggle" />
                         <div class="modal modal-bottom sm:modal-middle">
                             <div class="modal-box">
 
                                 <div class="modal-action">
-                                    <label for="my-modal-6" class="btn">close</label>
+                                    <label for="seeDetail-modal" class="btn">close</label>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,6 @@ const Package = ({ perPackage }) => {
                         <label
                             for="booking-modal"
                             class="btn btn-primary modal-button"
-                            onClick={() => setBooking(perPackage)}
                         >
                             Book Now
                         </label>
@@ -55,10 +54,9 @@ const Package = ({ perPackage }) => {
                         <input type="checkbox" id="booking-modal" class="modal-toggle" />
                         <div class="modal modal-bottom sm:modal-middle">
                             <div class="modal-box">
-                               
-                                <PackageBookingModal
-                                    booking={booking}
-                                ></PackageBookingModal>
+                                <h1 className='text-primary text-xl font-bold'>booking for : {name} </h1>
+                                <PackageBookingModal>
+                                </PackageBookingModal>
                                 <div class="modal-action">
                                     <label for="booking-modal" class="btn">Close</label>
                                 </div>
