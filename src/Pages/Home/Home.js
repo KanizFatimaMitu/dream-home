@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import Footer from '../../Components/Footer';
+import Statistics from '../../Statistics/Statistics';
 
 const Home = () => {
     const [packages, setPackages] = useState([])
@@ -18,6 +19,7 @@ const Home = () => {
     return (
         <div>
             <LandingPage></LandingPage>
+           
             <div className='m-0 lg:m-28 p-8'>
                 <h1 className='text-center text-2xl font-bold text-primary mt-16 flex justify-center'>"our Packages"</h1>
                 <p>We offer the full of services to help your home look better. Everything from creating standards of excellence to training your people to work in more effective ways, assessing how you are doing, and helping you perform even better in future. Very few others do this, and none have been doing it as long as we have.</p>
@@ -80,6 +82,7 @@ const Home = () => {
                     </button>
                 </div>
             </div>
+            <Statistics></Statistics>
             <Footer></Footer>
         </div>
     );
