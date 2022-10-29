@@ -1,7 +1,8 @@
 import React from 'react';
+import { format } from 'date-fns';
 
 
-const ConfirmConsultModal = () => {
+const ConfirmConsultModal = ({date}) => {
     return (
         <div>
             <div className='flex justify-center items-center mt-40'>
@@ -10,7 +11,7 @@ const ConfirmConsultModal = () => {
                         <h2 class="card-title text-primary font-bold">Congratulations !</h2>
                         <div>
                             <button class="btn btn-primary text-neutral mt-2">
-                                <p>Meeting is set at 3.00PM on 1 oct , 2022 </p>
+                                <p>Meeting is set at 3.00PM On {format(date, 'PP')}</p>
                             </button>
                         </div>
                     </div>

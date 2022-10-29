@@ -3,14 +3,14 @@ import { format } from 'date-fns';
 import { Link } from 'react-router-dom';
 
 
+
 const ConsultModal = ({ date }) => {
     return (
         <div>
             <label
+                date={date}
                 for="consult-modal"
                 class="btn modal-button bg-primary text-neutral mt-[830px] lg:mt-[500px] mb-[60px] lg:mb-[50px]"
-
-
             >
                 Sure to set an appointment on your selected date ?
 
@@ -28,10 +28,11 @@ const ConsultModal = ({ date }) => {
                     </select>
                     <div class="modal-action text-center">
                         <Link
-                            
                             for="consult-modal"
                             class="btn btn-primary"
-                            to='/dashboard/consultation'>Set Meeting</Link>
+                            to='/dashboard/consultation'>Set Meeting
+
+                        </Link>
                     </div>
                 </div>
             </div>
