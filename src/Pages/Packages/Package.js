@@ -2,9 +2,9 @@ import React from 'react';
 import Rating from '../../Components/Rating';
 import PackageBookingModal from './PackageBookingModal';
 
-const Package = ({ perPackage}) => {
+const Package = ({ perPackage }) => {
 
-    const { name, price } = perPackage;
+    const { name, price, img, _id, description, catagory,space, consult } = perPackage;
 
 
 
@@ -13,7 +13,7 @@ const Package = ({ perPackage}) => {
         <div >
             <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" class="rounded-xl" />
+                    <img src={img} alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
                     <h2 class="card-title">{name}</h2>
@@ -33,7 +33,18 @@ const Package = ({ perPackage}) => {
                         <input type="checkbox" id="seeDetail-modal" class="modal-toggle" />
                         <div class="modal modal-bottom sm:modal-middle">
                             <div class="modal-box">
-
+                                <h1 className='text-center text-primary font-bold mt-6'>
+                                    Package details
+                                </h1>
+                                <div className='text-left m-12'>
+                                    <p className='mb-2'><span className='text-primary font-bold'>Package name : </span> {name}</p>
+                                    <p className='mb-2'><span className='text-primary font-bold'>Package id : </span>{_id}</p>
+                                    <p className='mb-2'><span className='text-primary font-bold'>Price :  </span>{price}</p>
+                                    <p className='mb-2'><span className='text-primary font-bold'>Description :  </span>{description}</p>
+                                    <p className='mb-2'><span className='text-primary font-bold'>Catagory : </span>{catagory}</p>
+                                    <p className='mb-2'><span className='text-primary font-bold'>Minimum space : </span>{space}</p>
+                                    <p className='mb-2'><span className='text-primary font-bold'>Minimum consultation : </span>{consult}</p>
+                                </div>
                                 <div class="modal-action">
                                     <label for="seeDetail-modal" class="btn">close</label>
                                 </div>
@@ -45,6 +56,7 @@ const Package = ({ perPackage}) => {
                         <label
                             for="booking-modal"
                             class="btn btn-primary modal-button"
+                            perPackage={perPackage}
                         >
                             Book Now
                         </label>
