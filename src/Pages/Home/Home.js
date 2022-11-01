@@ -6,6 +6,7 @@ import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 import Footer from '../../Components/Footer';
 import Statistics from '../../Statistics/Statistics';
+import OfferBoard from './OfferBoard';
 
 const Home = () => {
     const [packages, setPackages] = useState([])
@@ -82,7 +83,7 @@ const Home = () => {
                     </button>
                 </div>
             </div>
-            
+            <OfferBoard></OfferBoard>
             <Footer></Footer>
         </div>
     );

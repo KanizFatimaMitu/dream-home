@@ -4,7 +4,7 @@ import ConfirmConsultModal from '../../Consult/ConfirmConsultModal';
 const ConsultationDetail = () => {
     return (
         <div>
-            <ConfirmConsultModal></ConfirmConsultModal>
+            <ConfirmConsultModal ></ConfirmConsultModal>
         </div>
     );
 };

@@ -8,7 +8,6 @@ const ConsultModal = ({ date }) => {
     return (
         <div>
             <label
-                date={date}
                 for="consult-modal"
                 class="btn modal-button bg-primary text-neutral mt-[830px] lg:mt-[500px] mb-[60px] lg:mb-[50px]"
             >
@@ -30,6 +29,7 @@ const ConsultModal = ({ date }) => {
                         <Link
                             for="consult-modal"
                             class="btn btn-primary"
+                            
                             to='/dashboard/consultation'>Set Meeting
 
                         </Link>
