@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { format } from 'date-fns';
 import { Link } from 'react-router-dom';
+import ConfirmConsultModal from './ConfirmConsultModal';
 
 
 
 const ConsultModal = ({ date }) => {
+    const [fixedDate, setFixedDate] =useState(null);
     return (
         <div>
             <label
@@ -26,16 +28,20 @@ const ConsultModal = ({ date }) => {
                         <option className='text-primary hover:text-neutral font-bold hover:bg-primary'>5.00 PM</option>
                     </select>
                     <div class="modal-action text-center">
-                        <Link
+                        <label
                             for="consult-modal"
                             class="btn btn-primary"
-                            
-                            to='/dashboard/consultation'>Set Meeting
-
-                        </Link>
+                            onClick={() => setFixedDate(date)}
+                            >
+                        </label>
+                        
                     </div>
+                    { fixedDate && <ConfirmConsultModal  fixedDate={fixedDate}></ConfirmConsultModal>}
+                    {/* <Link to='/dashboard/consultation'>Set Meeting</Link> */}
                 </div>
+
             </div>
+         
         </div>
     );
 };

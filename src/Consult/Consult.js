@@ -51,7 +51,7 @@ const Consult = () => {
                     </div>
                 </div>
                 <button>
-                    <ConsultModal date={date} ></ConsultModal>
+                    <ConsultModal date={date} setDate={setDate}></ConsultModal>
                 </button>
             </div>
 
