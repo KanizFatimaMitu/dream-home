@@ -8,6 +8,7 @@ const Packages = () => {
 
   const [packages, setPackages] = useState([]);
   const [data, setData] = useState(null);
+  // const [bookData, setBookData] = useState(null);
  
 
 
@@ -29,6 +30,8 @@ const Packages = () => {
            data={data}
            setData={setData}
             perPackage={perPackage}
+            // bookData={bookData}
+            // setBookData={setBookData}
           ></Package>)
         }
       </div>

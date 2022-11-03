@@ -3,7 +3,7 @@ import Rating from '../../Components/Rating';
 import BookNow from './BookNow';
 import SeeDetail from './SeeDetail';
 
-const Package = ({ perPackage, data, setData }) => {
+const Package = ({ perPackage, data, setData}) => {
 
     const { name, price, img} = perPackage;
 
@@ -22,7 +22,7 @@ const Package = ({ perPackage, data, setData }) => {
 
                     {/* for see detail button */}
                     <div class="card-actions">
-                        <div>
+                        <div  >
                             <SeeDetail perPackage={perPackage} data={data} setData={setData}></SeeDetail>
                         </div>
 

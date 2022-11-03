@@ -1,15 +1,15 @@
 import React from 'react';
 
-const SeeDetail = (data, perPackage, setData) => {
-    const { name, price, img, _id, description, catagory, space, consult } = data;
+const SeeDetail = ({ data, perPackage, setData }) => {
+    const { name, price, _id, description, catagory, space, consult } = perPackage;
 
     return (
         <div>
             <label
                 for="seeDetail-modal"
                 class="btn modal-button btn-primary"
-                onClick={() => setData(perPackage)}
-
+                onClick={ () => setData (perPackage) }
+data={data}
             >
                 See Details
             </label>
