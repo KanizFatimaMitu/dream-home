@@ -7,6 +7,7 @@ import Package from './Package';
 const Packages = () => {
 
   const [packages, setPackages] = useState([]);
+  const [data, setData] = useState(null);
  
 
 
@@ -25,7 +26,8 @@ const Packages = () => {
         {
           packages.map(perPackage => <Package
             key={perPackage._id}
-           
+           data={data}
+           setData={setData}
             perPackage={perPackage}
           ></Package>)
         }

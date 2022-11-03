@@ -27,12 +27,12 @@ const ConsultModal = ({ date }) => {
                         <option className='text-primary hover:text-neutral font-bold hover:bg-primary'>3.00 PM</option>
                         <option className='text-primary hover:text-neutral font-bold hover:bg-primary'>5.00 PM</option>
                     </select>
-                    <div class="modal-action text-center">
+                    <div class="modal-action text-center ">
                         <label
                             for="consult-modal"
                             class="btn btn-primary"
                             onClick={() => setFixedDate(date)}
-                            >
+                            >Set Meeting
                         </label>
                         
                     </div>
