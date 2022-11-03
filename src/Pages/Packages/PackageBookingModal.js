@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PackageBookingModal = () => {
 
-   
-    
-     
-   
-    return (
+  return (
         <div>
             <div>
                 <div class="hero">
@@ -34,6 +30,7 @@ const PackageBookingModal = () => {
                             </div>
                             <div class="form-control mt-6">
                                 <button 
+                                
                                 class="btn btn-primary">
                                     <Link to='/dashboard/booking'> confirm</Link>
 

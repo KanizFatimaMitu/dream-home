@@ -1,17 +1,19 @@
 import React from 'react';
 import PackageBookingModal from './PackageBookingModal';
 
-const BookNow = ({ perPackage, setData, data }) => {
+const BookNow = ({ perPackage,detail, setDetail }) => {
 
-    const { name } = perPackage;
+    const { name } = detail ;
+    
+
 
     return (
         <div>
             <label
                 for="booking-modal"
                 class="btn btn-primary modal-button"
-                onClick={() => setData(perPackage)}
-                data={data}
+                // onClick={() => setDetail(perPackage)}
+                
             >
                 Book Now
             </label>

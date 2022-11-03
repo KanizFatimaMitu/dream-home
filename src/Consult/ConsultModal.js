@@ -36,7 +36,7 @@ const ConsultModal = ({ date }) => {
                         </label>
                         
                     </div>
-                    { fixedDate && <ConfirmConsultModal  fixedDate={fixedDate}></ConfirmConsultModal>}
+                    {/* { fixedDate && <ConfirmConsultModal  fixedDate={fixedDate}></ConfirmConsultModal>} */}
                     {/* <Link to='/dashboard/consultation'>Set Meeting</Link> */}
                 </div>
 

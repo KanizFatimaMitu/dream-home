@@ -7,15 +7,11 @@ import Package from './Package';
 const Packages = () => {
 
   const [packages, setPackages] = useState([]);
-  const [data, setData] = useState(null);
-  // const [bookData, setBookData] = useState(null);
- 
-
-
+  const [detail, setDetail] = useState({});
 
 
   useEffect(() => {
-    fetch('http://localhost:5000/packages')
+    fetch('https://dream-home-server.vercel.app/packages')
       .then(res => res.json())
       .then(data => setPackages(data))
   }, [])
@@ -27,15 +23,14 @@ const Packages = () => {
         {
           packages.map(perPackage => <Package
             key={perPackage._id}
-           data={data}
-           setData={setData}
+            detail={detail}
+            setDetail={setDetail}
             perPackage={perPackage}
-            // bookData={bookData}
-            // setBookData={setBookData}
+
           ></Package>)
         }
       </div>
-      
+
     </div>
   );
 };
