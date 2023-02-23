@@ -9,7 +9,7 @@ const SeeDetail = ( {  perPackage,detail, setDetail } ) => {
             <label
                 for="seeDetail-modal"
                 class="btn modal-button btn-primary"
-                // onClick ={ () => setDetail (perPackage) }
+                onClick ={ () => setDetail?.(perPackage) }
 
             >
                 See Details
