@@ -4,6 +4,7 @@ import Statistics from '../../Statistics/Statistics';
 import OfferBoard from './OfferBoard';
 import Description from './Description';
 import Owner from './Owner';
+import Reviews from './Reviews';
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
             <LandingPage></LandingPage>
             <Description></Description>
             <Statistics></Statistics>
+            <Reviews></Reviews>
             <OfferBoard></OfferBoard>
             <Owner></Owner>
             <Footer></Footer>
