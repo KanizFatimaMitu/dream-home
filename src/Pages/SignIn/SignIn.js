@@ -9,12 +9,13 @@ import './SignIn.css'
 const SignIn = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const { register, formState: { errors }, handleSubmit } = useForm();
-    const [signInWithEmailAndPassword,user,loading,error,] = useSignInWithEmailAndPassword(auth);
+    const [signInWithEmailAndPassword,user,loading,error] = useSignInWithEmailAndPassword(auth);
+    
 
     let signInError;
     const navigate = useNavigate();
     const location = useLocation();
-    let from = location.state?.from?.pathname || "/packages";
+    let from = location.state?.from?.pathname || "/";
 
     useEffect( () =>{
         if (user || gUser) {

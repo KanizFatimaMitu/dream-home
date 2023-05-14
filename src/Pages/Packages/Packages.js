@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Package from './Package';
+import Footer from '../../Components/Footer';
 
 
 
@@ -30,7 +31,7 @@ const Packages = () => {
           ></Package>)
         }
       </div>
-
+      <Footer></Footer>
     </div>
   );
 };

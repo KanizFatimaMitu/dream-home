@@ -5,11 +5,11 @@ import About from './Pages/About';
 import Packages from './Pages/Packages/Packages';
 import Bookings from './Pages/Bookings';
 import SignIn from './Pages/SignIn/SignIn';
+import RequireAuth from './Pages/SignIn/RequireAuth'
 import Home from './Pages/Home/Home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import AdminRoute from './Authentications/AdminRoute';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import SignUp from './Pages/SignIn/SignUp';
 import ConfirmationModal from './Pages/Packages/ConfirmationModal';
@@ -29,14 +29,22 @@ function App() {
       <Navbar>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
-          <Route path="/packages" element={<Packages></Packages>}></Route>
-          <Route path="/consult" element={<Consult></Consult>}></Route>
+          <Route path="/packages" element={
+            <RequireAuth>
+              <Packages></Packages>
+            </RequireAuth>
+          }></Route>
+          <Route path="/consult" element={
+            <RequireAuth>
+              <Consult></Consult>
+            </RequireAuth>
+          }></Route>
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/bookings" element={<Bookings></Bookings>}></Route>
           <Route path="/dashboard" element={
-            <AdminRoute>
+            <RequireAuth>
               <Dashboard></Dashboard>
-            </AdminRoute>
+            </RequireAuth>
           }>
             <Route path='/dashboard/booking' element={<BookingDetail></BookingDetail>}></Route>
             <Route path='/dashboard/consultation' element={<ConsultationDetail></ConsultationDetail>}></Route>

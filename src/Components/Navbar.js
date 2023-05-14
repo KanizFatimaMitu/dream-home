@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import UseAdmin from '../Hooks/UseAdmin';
+import { useAuthState,  useSignOut } from 'react-firebase-hooks/auth';
+import auth from '../firebase.init';
 
 const Navbar = ({ children }) => {
   const [dark, setDark] = useState(false)
+  const [user, loading] = useAuthState(auth);
+  const [signOut, aLoading] = useSignOut(auth);
+
 
   const admin = UseAdmin();
-
   const { pathname } = useLocation();
+
+  
 
   return (
     <div class="drawer drawer-end fixed top-0" data-theme={dark ? "dark" : "light"} >
@@ -63,10 +69,11 @@ const Navbar = ({ children }) => {
 
 
                 <ul tabindex="0" class="dropdown-content menu p-2 gap-y-2 shadow bg-base-100 rounded-box w-52">
-                  <li className='text-primary'> <a target="_blank" href="https://www.linkedin.com/in/kaniz-fatima-mitu-212432233/" >Your profile</a></li>
+                  <li className='text-primary'> <a target="_blank" href="https://www.linkedin.com/in/kaniz-mitu/" >Your profile</a></li>
                   <li className='bg-primary rounded-lg text-white'>
-                    <NavLink to='/signin'>SignIn</NavLink>
+                   {user ? <NavLink to='/signin'>SignOut</NavLink> : <NavLink to='/signin'>SignIn</NavLink>}
                   </li>
+                 
                 </ul>
               </li>
 

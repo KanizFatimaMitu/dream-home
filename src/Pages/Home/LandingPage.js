@@ -42,7 +42,7 @@ const LandingPage = () => {
             data-aos="zoom-in"
             data-aos-delay="1100"
           >
-            <Link to='/signup' >Contact with us</Link>
+            <Link to="/consult" >Contact with us</Link>
           </button>
 
         </div>
