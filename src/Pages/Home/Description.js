@@ -74,7 +74,7 @@ const Description = () => {
                 </div>
             </div>
             <div className='flex align-item-center justify-center mt-10 '>
-                <button class="btn btn-primary font-bold" > <Link to="/consult" >Get in touch with us today !</Link></button>
+                <button class="btn btn-primary font-bold text-white" > <Link to="/consult" >Get in touch with us today !</Link></button>
             </div>
         </div>
     );

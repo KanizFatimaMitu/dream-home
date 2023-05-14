@@ -1,5 +1,6 @@
 import React from 'react';
 import offer from '../../Assets/offer.png';
+import { Link } from 'react-router-dom';
 
 const OfferBoard = () => {
     return (
@@ -9,7 +10,7 @@ const OfferBoard = () => {
                 <figure ><img  src={offer} alt="" /></figure>
                 <div class="card-body items-center m-4">
                     <h2 class="card-title text-5xl font-extrabold fw-12 text-primary">!! Mega sale !!</h2>
-                    <button class="btn btn-error mt-4 text-white font-bold">Upto 70% OFF </button>
+                    <button class="btn btn-error mt-4 text-white font-bold"><Link to="/packages">Upto 70% OFF</Link> </button>
                 </div>
                
             </div>

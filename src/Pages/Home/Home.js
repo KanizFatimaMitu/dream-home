@@ -6,6 +6,7 @@ import Description from './Description';
 import Owner from './Owner';
 import Reviews from './Reviews';
 import Feature from './Feature';
+import Contact from './Contact';
 
 
 
@@ -20,6 +21,7 @@ const Home = () => {
             <Feature></Feature>
             <Reviews></Reviews>
             <OfferBoard></OfferBoard>
+            <Contact></Contact>
             <Owner></Owner>
             <Footer></Footer>
         </div>
