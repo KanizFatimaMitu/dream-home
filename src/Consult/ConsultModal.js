@@ -32,7 +32,7 @@ const ConsultModal = ({ date }) => {
                             for="consult-modal"
                             class="btn btn-primary"
                             onClick={() => setFixedDate(date)}
-                            >Set Meeting
+                            ><Link to='/'>Set Meeting</Link>
                         </label>
                         
                     </div>

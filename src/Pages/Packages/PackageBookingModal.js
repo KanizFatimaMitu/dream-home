@@ -1,7 +1,10 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const PackageBookingModal = () => {
+    const [user, loading] = useAuthState(auth);
 
     return (
         <div>
@@ -12,15 +15,15 @@ const PackageBookingModal = () => {
 
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Email</span>
+                                    <span class="label-text">Name</span>
                                 </label>
-                                <input type="text" placeholder="your email" class="input input-bordered" />
+                                <input type="text" value={user?.displayName} class="input input-bordered" />
                             </div>
                             <div class="form-control">
                                 <label class="label">
-                                    <span class="label-text">Address</span>
+                                    <span class="label-text">Email</span>
                                 </label>
-                                <input type="text" placeholder="your address" class="input input-bordered" />
+                                <input type="email" value={user?.email} class="input input-bordered" />
                             </div>
                             <div class="form-control">
                                 <label class="label">
@@ -32,7 +35,7 @@ const PackageBookingModal = () => {
                                 <button
 
                                     class="btn btn-primary">
-                                    <Link to='/dashboard/booking'> confirm</Link>
+                                    <Link to='/'> confirm</Link>
                                 </button>
                             </div>
                         </div>

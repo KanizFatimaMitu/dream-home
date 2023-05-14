@@ -65,7 +65,7 @@ const Navbar = ({ children }) => {
                   User
                   </NavLink> */}
                 <div className="bg-inherit rounded-lg">
-                  <img class="w-10 h-10 rounded-full" src="https://placeimg.com/192/192/people" alt='' />
+                  <img class="w-10 h-10 rounded-full" src={user?.photoURL} alt='' />
                 </div>
 
 
