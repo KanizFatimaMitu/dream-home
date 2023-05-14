@@ -12,7 +12,7 @@ const BookNow = ({ perPackage,detail, setDetail }) => {
             <label
                 for="booking-modal"
                 class="btn btn-primary modal-button"
-                // onClick={() => setDetail(perPackage)}
+                onClick={() => setDetail?.(perPackage)}
                 
             >
                 Book Now

@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import UseAdmin from '../Hooks/UseAdmin';
-import { useAuthState,  useSignOut } from 'react-firebase-hooks/auth';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init';
+import { signOut } from 'firebase/auth';
 
 const Navbar = ({ children }) => {
   const [dark, setDark] = useState(false)
   const [user, loading] = useAuthState(auth);
-  const [signOut, aLoading] = useSignOut(auth);
+
 
 
   const admin = UseAdmin();
   const { pathname } = useLocation();
 
-  
+  const logOut = () => {
+    signOut(auth)
+  }
 
   return (
     <div class="drawer drawer-end fixed top-0" data-theme={dark ? "dark" : "light"} >
@@ -47,10 +50,8 @@ const Navbar = ({ children }) => {
               <li><NavLink to="/packages" className="rounded-lg">Packages</NavLink></li>
               <li><NavLink to="/consult" className="rounded-lg">Consult</NavLink></li>
               <li><NavLink to="/about" className="rounded-lg">About</NavLink></li>
-              {/* Only For Admin  */}
-              {admin &&
-                (<li><NavLink to="/dashboard" className="rounded-lg">Dashboard</NavLink></li>)
-              }
+              <li><NavLink to="/dashboard" className="rounded-lg">Dashboard</NavLink></li>
+              
               {/* for dark theme  */}
               <li>
                 <label data-toggle-theme="dark,light" class="swap swap-rotate bg-inherit">
@@ -71,9 +72,9 @@ const Navbar = ({ children }) => {
                 <ul tabindex="0" class="dropdown-content menu p-2 gap-y-2 shadow bg-base-100 rounded-box w-52">
                   <li className='text-primary'> <a target="_blank" href="https://www.linkedin.com/in/kaniz-mitu/" >Your profile</a></li>
                   <li className='bg-primary rounded-lg text-white'>
-                   {user ? <NavLink to='/signin'>SignOut</NavLink> : <NavLink to='/signin'>SignIn</NavLink>}
+                    {user ? <NavLink onClick={logOut} to='/signin'>SignOut</NavLink> : <NavLink to='/signin'>SignIn</NavLink>}
                   </li>
-                 
+
                 </ul>
               </li>
 
@@ -99,7 +100,7 @@ const Navbar = ({ children }) => {
           <li><NavLink to="/consult" className="rounded-lg">Consult</NavLink></li>
           <li><NavLink to="/about" className="rounded-lg">About</NavLink></li>
           <li><NavLink to="/dashboard" className="rounded-lg">Dashboard</NavLink></li>
-          <li><NavLink to="/signin" className="rounded-lg text-neutral">SignIn</NavLink></li>
+          <li>{user ? <NavLink onClick={logOut} className="rounded-lg text-neutral" to='/signin'>SignOut</NavLink> : <NavLink className="rounded-lg text-neutral" to='/signin'>SignIn</NavLink>}</li>
         </ul>
       </div>
     </div>

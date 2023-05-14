@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const PackageBookingModal = () => {
 
-  return (
+    return (
         <div>
             <div>
                 <div class="hero">
                     <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl ">
                         <div class="card-body">
-                       
+
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Email</span>
@@ -29,11 +29,10 @@ const PackageBookingModal = () => {
                                 <input type="your phone number" placeholder="your phone number" class="input input-bordered" />
                             </div>
                             <div class="form-control mt-6">
-                                <button 
-                                
-                                class="btn btn-primary">
-                                    <Link to='/dashboard/booking'> confirm</Link>
+                                <button
 
+                                    class="btn btn-primary">
+                                    <Link to='/dashboard/booking'> confirm</Link>
                                 </button>
                             </div>
                         </div>
