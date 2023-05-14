@@ -8,7 +8,7 @@ const Description = () => {
     return (
         <div>
             <h1 className='text-center mt-32 text-4xl font-bold'>THE IMAGINE INTERIORS ADVANTAGE</h1>
-            <div class="card lg:card-side bg-base-100 shadow-xl mt-4">
+            <div class="card lg:card-side lg:m-6 bg-base-100 shadow-xl mt-4">
                 <div class="card-body">
                     <FontAwesomeIcon
                         className=' text-primary text-2xl font-bold visible lg:invisible mr-2'
