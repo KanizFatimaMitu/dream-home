@@ -2,7 +2,7 @@ import React from 'react';
 
 const Statistics = () => {
     return (
-        <div className='text-center mt-48'>
+        <div className='text-center mt-12'>
             <div class="stats stats-vertical lg:stats-horizontal ">
 
                 <div class="stat">
@@ -20,7 +20,7 @@ const Statistics = () => {
                     </div>
                     <div class="stat-title">Page Views</div>
                     <div class="stat-value text-secondary">1.6M</div>
-                    <div class="stat-desc">21% more than last month</div>
+                    <div class="stat-desc">36% more than last month</div>
                 </div>
 
                 <div class="stat">
