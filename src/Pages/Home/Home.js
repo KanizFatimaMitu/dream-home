@@ -5,6 +5,7 @@ import OfferBoard from './OfferBoard';
 import Description from './Description';
 import Owner from './Owner';
 import Reviews from './Reviews';
+import Feature from './Feature';
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
             <LandingPage></LandingPage>
             <Description></Description>
             <Statistics></Statistics>
+            <Feature></Feature>
             <Reviews></Reviews>
             <OfferBoard></OfferBoard>
             <Owner></Owner>
