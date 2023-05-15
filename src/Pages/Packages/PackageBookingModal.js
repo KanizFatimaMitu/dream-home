@@ -18,7 +18,7 @@ const PackageBookingModal = ({ detail }) => {
         const cost = price;
         const userDetail = { userName, Email, Phone,Package,cost }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://dream-home-server.vercel.app/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
