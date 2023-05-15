@@ -16,6 +16,8 @@ import ConfirmationModal from './Pages/Packages/ConfirmationModal';
 import Consult from './Consult/Consult';
 import BookingDetail from './Pages/Dashboard/BookingDetail';
 import ConsultationDetail from './Pages/Dashboard/ConsultationDetail';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // For Animation 
 function App() {
@@ -54,7 +56,7 @@ function App() {
           <Route path="/confirm" element={<ConfirmationModal></ConfirmationModal>}></Route>
         </Routes>
       </Navbar>
-
+      <ToastContainer />
 
     </div>
   );

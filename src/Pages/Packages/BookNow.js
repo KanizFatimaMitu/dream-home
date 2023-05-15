@@ -24,7 +24,7 @@ const BookNow = ({ perPackage,detail, setDetail }) => {
             <div class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
                     <h1 className='text-primary text-xl font-bold'>booking for : {name} </h1>
-                    <PackageBookingModal>
+                    <PackageBookingModal detail={detail}>
                     </PackageBookingModal>
                     <div class="modal-action">
                         <label for="booking-modal" class="btn">Close</label>
