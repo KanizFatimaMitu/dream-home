@@ -70,13 +70,8 @@ const PackageBookingModal = ({ detail }) => {
                                 <input type="text" name="phone" placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
                             </div>
                             <div class="form-control mt-6">
-                                <input type="submit" value="Submit" className="btn btn-secondary w-full max-w-xs" />
-                                {/* <button
-                                    type='submit'
-                                    value="Submit"
-                                    class="btn btn-primary">
-                                    <Link to='/'> confirm</Link>
-                                </button> */}
+                                <input type="submit" value="confirm" className="btn btn-primary w-full max-w-xs" />
+                                
                             </div>
                         </form>
                     </div>

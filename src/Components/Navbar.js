@@ -100,7 +100,7 @@ const Navbar = ({ children }) => {
           <li><NavLink to="/consult" className="rounded-lg">Consult</NavLink></li>
           <li><NavLink to="/about" className="rounded-lg">About</NavLink></li>
           <li><NavLink to="/dashboard" className="rounded-lg">Dashboard</NavLink></li>
-          <li>{user ? <NavLink onClick={logOut} className="rounded-lg text-neutral" to='/signin'>SignOut</NavLink> : <NavLink className="rounded-lg text-neutral" to='/signin'>SignIn</NavLink>}</li>
+          <li>{user ? <NavLink onClick={logOut} className="rounded-lg" to='/signin'>SignOut</NavLink> : <NavLink className="rounded-lg text-neutral" to='/signin'>SignIn</NavLink>}</li>
         </ul>
       </div>
     </div>
